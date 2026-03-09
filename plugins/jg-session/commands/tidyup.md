@@ -1,6 +1,6 @@
 We are at a good stopping point for this session. Perform the following tidy-up:
 
-1. Ensure .CLAUDE_LAST_SESSION.md is in .gitignore (check and add if missing)
+1. Ensure .CLAUDE_LAST_SESSION.md is excluded from git by adding it to .git/info/exclude (check and add if missing — do NOT use .gitignore for this)
 2. Update any appropriate status documentation that exists for this project. If we don't have a dedicated file, then you can update @CLAUDE.md, if that's appropriate.
 3. Commit our code
 4. If a session summary file (.CLAUDE_LAST_SESSION.md) exists already, then remove it.
