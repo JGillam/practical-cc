@@ -1,6 +1,6 @@
 {
   "name": "session-management",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A pair of slash commands that maintain context between Claude Code sessions through automatic session documentation. Eliminates the need to manually explain what you were working on when starting a new session.",
   "author": {
     "name": "Jason G.",
