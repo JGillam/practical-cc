@@ -2,8 +2,8 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "practical-cc",
   "owner": {
-    "name": "Jason G.",
-    "email": "jason@example.com"
+    "name": "Jason Gillam",
+    "email": "jason.gillam@gmail.com"
   },
   "metadata": {
     "description": "A curated marketplace of Claude Code plugins and workflows to enhance your AI-assisted development experience",
@@ -17,7 +17,7 @@
       "version": "1.0.1",
       "source": "./plugins/jg-session",
       "author": {
-        "name": "Jason G."
+        "name": "Jason Gillam"
       },
       "category": "productivity"
     }
