@@ -13,12 +13,13 @@ This eliminates the need to manually explain what you were working on when start
 
 ## Commands
 
+Both commands set `disable-model-invocation: true` — Claude won't auto-trigger them, you invoke them explicitly with `/tidyup` and `/tidydown`.
+
 ### /tidyup
 
 End-of-session cleanup that:
-- Ensures `.CLAUDE_LAST_SESSION.md` is in `.gitignore`
-- Updates project status documentation
-- Commits your code
+- Promotes any durable facts surfaced in the session (user preferences, project facts, feedback rules) to auto-memory **before** writing the handoff, so they survive future sessions instead of getting overwritten
+- Ensures `.CLAUDE_LAST_SESSION.md` is excluded via `.git/info/exclude` (not `.gitignore`, so it stays per-developer)
 - Creates a new session summary with:
   - What was accomplished (features, bugs fixed, refactoring)
   - Current state (what's working, what's incomplete)
@@ -29,7 +30,7 @@ End-of-session cleanup that:
 
 Start-of-session context loader that:
 - Reads `.CLAUDE_LAST_SESSION.md` from your project root
-- Uses it as context for the current session
+- Treats it as a **starting point, not authoritative state** — Claude is reminded to re-read referenced files and check `git log`/`git status` before acting on the handoff's claims
 - Informs you if no previous session exists (starting fresh)
 
 ## Installation
@@ -113,6 +114,11 @@ The tidyup command integrates with your git workflow:
 **Solution**: Ensure you have changes to commit and proper git configuration (user.name, user.email)
 
 ## Version History
+
+### 1.1.0
+- `/tidyup` now promotes durable user/project facts to auto-memory before writing the handoff, so they survive across sessions instead of being overwritten
+- `/tidydown` now reminds Claude that the handoff is a starting point, not authoritative state — verify against current files and `git log`/`git status` before acting
+- Both commands now ship `disable-model-invocation: true`, so Claude won't auto-trigger them
 
 ### 1.0.0
 - Initial release
