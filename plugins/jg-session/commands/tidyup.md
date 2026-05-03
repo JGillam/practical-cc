@@ -1,3 +1,8 @@
+---
+description: End-of-session cleanup — saves a handoff summary to .CLAUDE_LAST_SESSION.md so the next session can pick up where this one left off.
+disable-model-invocation: true
+---
+
 We are at a good stopping point for this session. Perform the following tidy-up:
 
 1. Ensure .CLAUDE_LAST_SESSION.md is excluded from git by adding it to .git/info/exclude (check and add if missing — do NOT use .gitignore for this)

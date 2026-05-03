@@ -1,3 +1,8 @@
+---
+description: Start-of-session context loader — reads the previous session's handoff from .CLAUDE_LAST_SESSION.md.
+disable-model-invocation: true
+---
+
 Read the session summary from .CLAUDE_LAST_SESSION.md and use it as context for this session.
 
 If the file doesn't exist, inform the user (they may be starting fresh) and proceed with their request.
