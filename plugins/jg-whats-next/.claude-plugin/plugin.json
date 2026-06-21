@@ -1,0 +1,21 @@
+{
+  "name": "whats-next",
+  "description": "A /whats-next command that triages which open GitHub issues are genuinely remaining on your current branch (open != unfinished) and returns a ranked, evidence-backed shortlist of what to do next. Delegates the analysis to a read-only subagent.",
+  "author": {
+    "name": "Jason Gillam",
+    "url": "https://github.com/jasongilman/practical-cc"
+  },
+  "license": "CC-BY-4.0",
+  "homepage": "https://github.com/jasongilman/practical-cc/tree/main/plugins/jg-whats-next",
+  "repository": "https://github.com/jasongilman/practical-cc",
+  "keywords": [
+    "issues",
+    "triage",
+    "github",
+    "gh",
+    "planning",
+    "next-steps",
+    "whats-next",
+    "productivity"
+  ]
+}
