@@ -20,6 +20,16 @@
         "name": "Jason Gillam"
       },
       "category": "productivity"
+    },
+    {
+      "name": "whats-next",
+      "description": "Triage which open GitHub issues are genuinely remaining on your current branch (open != unfinished) and get a ranked, evidence-backed shortlist of what to do next",
+      "version": "1.0.0",
+      "source": "./plugins/jg-whats-next",
+      "author": {
+        "name": "Jason Gillam"
+      },
+      "category": "productivity"
     }
   ]
 }
